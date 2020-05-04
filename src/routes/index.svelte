@@ -26,7 +26,6 @@
 		background-position: top;
 		background-size: cover;
 		background-blend-mode: darken;
-		height: 600px;
 	}
 
 	.blok {
@@ -42,7 +41,6 @@
 
 	.description-text {
 		color: white;
-		text-align: left;
 	}
 
 	.description-image, .series-image{
@@ -50,9 +48,6 @@
 		margin-bottom: auto;
 	}
 
-	.description-image img {
-		margin-left: 100%;
-	}
 
 	.series-header {
 		display: flex;
@@ -68,6 +63,44 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
+	}
+
+	.pink {
+		background: pink;
+		color: white;
+	}
+
+	@media (max-width: 900px) {
+		.description-image img {
+			margin-left: 0%;
+			display: none;
+		}
+
+		.main-image {
+			height: 300px;
+		}
+
+		.description-text {
+			text-align: center;
+		}
+	}
+
+	@media (min-width: 900px) {
+		.description-image img {
+			margin-left: 100%;
+		}
+
+		.main-image {
+			height: 600px;
+		}
+
+		.description-text {
+			text-align: left;
+		}
+	}
+
+	.series-image img {
+			width: 100%;
 	}
 </style>
 
@@ -110,7 +143,7 @@
 	</div>
 </div>
 
-<div class="blok series-management">
+<div class="blok series-management pink">
 	<div class="series-header">
 		<h2>Page Control</h2>
 	</div>

@@ -13,8 +13,6 @@
 	ul {
 		margin: 0;
 		padding: 0;
-		margin-left: 25%;
-		margin-right: 25%;
 	}
 
 	/* clearfix */
@@ -26,14 +24,6 @@
 
 	li {
 		display: block;
-	}
-
-	.left {
-		float: left;
-	}
-
-	.right {
-		float: right;
 	}
 
 	[aria-current] {
@@ -59,6 +49,24 @@
 
 	img {
 		height: 20px;
+	}
+
+	.left {
+			float: left;
+	}
+
+	.right {
+		float: right;
+	}
+
+	@media (max-width: 900px) {
+	}
+
+	@media (min-width: 900px) {
+		ul {
+			margin-left: 25%;
+			margin-right: 25%;
+		}
 	}
 </style>
 

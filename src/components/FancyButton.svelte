@@ -10,6 +10,7 @@
         line-height: 40px;
         margin-left: 5px;
         margin-right: 5px;
+        justify-content: center;
     }
 
     .container {
