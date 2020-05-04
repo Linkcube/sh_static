@@ -7,11 +7,14 @@
 		border-bottom: 1px solid rgba(255,62,0,0.1);
 		font-weight: 300;
 		padding: 0 1em;
+		background: #fffbf6;
 	}
 
 	ul {
 		margin: 0;
 		padding: 0;
+		margin-left: 25%;
+		margin-right: 25%;
 	}
 
 	/* clearfix */
@@ -23,7 +26,14 @@
 
 	li {
 		display: block;
+	}
+
+	.left {
 		float: left;
+	}
+
+	.right {
+		float: right;
 	}
 
 	[aria-current] {
@@ -46,15 +56,19 @@
 		padding: 1em 0.5em;
 		display: block;
 	}
+
+	img {
+		height: 20px;
+	}
 </style>
 
 <nav>
 	<ul>
-		<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
-		<li><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li>
+		<li class="left"><a aria-current='{segment === undefined ? "page" : undefined}' href='.'><img alt="Scanlation Harmonia" src="/full_text_h.png"></a></li>
+		<!-- <li class="left"><a aria-current='{segment === "features" ? "page" : undefined}' href='features'>features</a></li>
+		<li class="left"><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li> -->
 
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>blog</a></li>
+		<li class="right"><a href='https://github.com/Linkcube/Scanlation-Harmonia/releases'>download</a></li>
+		<li class="right"><a href='https://github.com/Linkcube/Scanlation-Harmonia/'>github</a></li>
 	</ul>
 </nav>
