@@ -22,7 +22,7 @@
 	.main-image {
 		padding: 0px;
 		margin: 0px;
-		background-image: url(/main_page_image.jpg);
+		background-image: url(/main_page_image3.jpg);
 		background-position: top;
 		background-size: cover;
 		background-blend-mode: darken;
@@ -78,10 +78,12 @@
 
 		.main-image {
 			height: 300px;
+			/* display: none; */
 		}
 
-		.description-text {
+		.description-text, .page-text {
 			text-align: center;
+			padding: 1em;
 		}
 
 		img {
@@ -99,7 +101,14 @@
 		}
 
 		.description-text {
+			max-width: 500px;
 			text-align: left;
+		}
+
+		.page-text {
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 	}
 
@@ -109,7 +118,7 @@
 </style>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Scanlation Harmonia</title>
 </svelte:head>
 
 <div class="main-image"/>
@@ -118,8 +127,8 @@
 	<div class="description-text">
 		<h2>Manage your scanlation <br>projects</h2>
 		<p>
-			Scanlation Harmonia is an open-source project made to help <br>
-			with managing all of the steps of scanlation, <br>
+			Scanlation Harmonia is an open-source project made to help 
+			with managing all of the steps of scanlation, 
 			with a strong emphasis on the translation aspect.
 		</p>
 		<FancyButton value="Download" on:click={() => goto('https://github.com/Linkcube/Scanlation-Harmonia/releases')}/>
@@ -130,6 +139,27 @@
 </div>
 
 <div class="blok series-management">
+	<div class="series-header">
+		<h2>Page Control</h2>
+	</div>
+	<div class="series-header page-text">
+		<p>
+			Keep track of your dialogues, with boxes for raw and translated content as well as setting the 
+			intended style and language for the translated content.
+			<br>
+			<br>
+			Easy to select dialogues with both a table and place-able boxes that show 
+			where the dialogue is on the page.	
+		</p>
+	</div>
+	<div class="series-content">
+		<div class="series-image">
+			<img alt="series management" src="/page_level.jpg">
+		</div>
+	</div>
+</div>
+
+<div class="blok series-management pink">
 	<div class="series-header">
 		<h2>Series Management</h2>
 	</div>
@@ -142,31 +172,12 @@
 	</div>
 	<div class="series-content">
 		<div class="series-image">
-			<img alt="series management" src="/series_management.jpg">
+			<img alt="series management" src="/series_management_pink.jpg">
 		</div>
 	</div>
 </div>
 
-<div class="blok series-management pink">
-	<div class="series-header">
-		<h2>Page Control</h2>
-	</div>
-	<div class="series-header">
-		<p>
-			Keep track of your dialogues, with boxes for raw and translated content as well as setting the <br>
-			intended style and language for the translated content.
-			<br>
-			<br>
-			Easy to select dialogues with both a table and place-able boxes that show <br>
-			where the dialogue is on the page.	
-		</p>
-	</div>
-	<div class="series-content">
-		<div class="series-image">
-			<img alt="series management" src="/page_level.jpg">
-		</div>
-	</div>
-</div>
+
 
 <!-- <div class="blok series-management">
 	<div class="series-header">
