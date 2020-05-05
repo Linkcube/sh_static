@@ -73,8 +73,8 @@
 <nav>
 	<ul>
 		<li class="left"><a aria-current='{segment === undefined ? "page" : undefined}' href='.'><img alt="Scanlation Harmonia" src="/full_text_h.png"></a></li>
-		<!-- <li class="left"><a aria-current='{segment === "features" ? "page" : undefined}' href='features'>features</a></li>
-		<li class="left"><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li> -->
+		<li class="left"><a aria-current='{segment === "features" ? "page" : undefined}' href='features'>features</a></li>
+		<!-- <li class="left"><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li> -->
 
 		<li class="right"><a href='https://github.com/Linkcube/Scanlation-Harmonia/releases'>download</a></li>
 		<li class="right"><a href='https://github.com/Linkcube/Scanlation-Harmonia/'>github</a></li>
