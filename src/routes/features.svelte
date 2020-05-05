@@ -59,6 +59,10 @@
 		.wrap {
 			flex-wrap: wrap;
 		}
+
+		img {
+			width: 100%;
+		}
 	}
 
 	@media (min-width: 900px) {

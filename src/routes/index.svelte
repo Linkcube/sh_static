@@ -83,6 +83,10 @@
 		.description-text {
 			text-align: center;
 		}
+
+		img {
+			width: 100%;
+		}
 	}
 
 	@media (min-width: 900px) {
